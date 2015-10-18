@@ -1,0 +1,417 @@
+body {
+  /*font-family: 'Roboto', sans-serif; */
+  font-size: 18px;
+  background: white;
+  color: black;
+  margin: 0;
+  line-height: 1.5em;
+
+}
+
+p {
+  line-height: 2em;
+}
+.caption:h2 {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+}
+
+.container-fluid {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  width: 120%;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+label {
+  display: none;
+  margin-right: 1em;
+  padding: 0.4em 0;
+  cursor: pointer;
+}
+
+/* button {
+  border: 10px solid #00FFAA;
+  font-family: monospace;
+  position: absolute;
+  line-height: 60px;
+  text-align: right;
+  padding: 0 1.2em;
+  background: #444;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  outline: none;
+  height: 80px;
+  width: 80%;
+  top: 260px;
+  margin: 0;
+  left: 10%;
+}
+
+button:hover {
+  background: #00FFAA;
+}
+
+input[type=checkbox] + label:before {
+  display: none;
+  position: relative;
+  background: #444;
+  margin-right: 8px;
+  content: "";
+  height: 16px;
+  width: 16px;
+  top: 1px;
+}
+
+input[type=checkbox]:checked + label:before {
+  background: #00FFAA;
+}
+*/
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding:;
+
+}
+
+.scene {
+  padding: 0;
+
+}
+
+.caption {
+  text-align: right;
+  margin-top: 32%;
+  padding-right: 30%;
+  color: white;
+  letter-spacing: 1.5px;
+  line-height: 1.5px;
+}
+
+
+.portfolio {
+  padding-top: 5%;
+}
+#portrait {
+  padding-right: 5%;
+  padding-top: 5%;
+}
+.aboutme {
+  padding: 5%; 
+}
+
+
+.fill {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  left: 5%;
+  top: 5%;
+}
+
+.expand-width {
+  width: 100%;
+}
+
+.border {
+  border: 2px dashed #00FFAA;
+}
+
+.aspect {
+  opacity: 0.2;
+}
+
+
+
+
+section {
+  min-height: 100vh;
+  padding-top: 7%; 
+  color:black;
+}
+
+#contact {
+  text-align: center;
+  padding-top: 20%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#contact-info {
+  padding-top: 5%;
+}
+
+footer {
+  text-align: center;
+  margin-top: -5%;
+}
+
+/* navigation */
+
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #000;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+    margin-left: 10%;
+    
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: rgba(255,255,255,.8);
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
+
+/*.layer:nth-child(1) {
+  opacity: 0.15;
+}
+.layer:nth-child(1) button {
+  -webkit-transform: rotate(150deg);
+}
+
+.layer:nth-child(2) {
+  opacity: 0.30;
+}
+.layer:nth-child(2) button {
+  -webkit-transform: rotate(120deg);
+}
+
+.layer:nth-child(3) {
+  opacity: 0.45;
+}
+.layer:nth-child(3) button {
+  -webkit-transform: rotate(90deg);
+}
+
+.layer:nth-child(4) {
+  opacity: 0.60;
+}
+.layer:nth-child(4) button {
+  -webkit-transform: rotate(60deg);
+}
+
+.layer:nth-child(5) {
+  opacity: 0.75;
+}
+.layer:nth-child(5) button {
+  -webkit-transform: rotate(30deg);
+}
+
+.layer:nth-child(6) {
+  opacity: 0.90;
+}
+.layer:nth-child(6) button {
+}
+*/
+
+
+
+.frame {
+  display: block;
+  position: relative;
+  margin-top: 1%;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  border: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+ 
+}
+
+
+.scene {
+
+  position: absolute;
+  margin-left: -20%;
+  margin-right: 3%;
+  margin-top: -8%;
+}
+
+/* @media (max-width: 500px) {
+  body {
+    background:;
+  }
+
+  .frame {
+  display: block;
+  position: relative;
+  margin-top: 16%;
+  overflow: hidden;
+  width: 100%;
+  height: 49vh;
+  border: 10px solid white;
+  border-right: 10px solid white;
+  border-left: 10px solid white;
+  
+}
+
+
+.scene {
+
+  position: absolute;
+  margin-left: -24%;
+  margin-right: 4%;
+  margin-top: -8%;
+  }
+
+  img {
+  
+  width: 125%;
+  }
+}
+*/
+@media(min-width:768px) {
+
+.quote {
+  padding-top: 20%;
+  text-align: center;
+
+}
+
+.scene {
+
+  position: absolute;
+  margin-left: -24%;
+  margin-right: 4%;
+  margin-top: -5%;
+  }
+    .navbar-custom {
+        padding: 20px 20px;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #000;
+    }
+}
+
+p {
+  line-height: 2em;
+}
+@media(max-width: 360px){
+     .navbar-custom {
+        padding: 2% 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+      .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #000;
+    }
+    p {
+      line-height: 2em;
+      }
+   
+  .frame {
+  display: block;
+  position: relative;
+  margin-top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 49vh;
+  border: 10px solid white;
+  border-right: 10px solid white;
+  border-left: 10px solid white;
+  
+}
+
+
+.scene {
+
+  position: absolute;
+  margin-left: -24%;
+  margin-right: 4%;
+  margin-top: -5%;
+  }
+
+  img {
+  
+  width: 125%;
+  }
+  .navbar-custom .navbar-brand {
+    font-weight: 700;
+    margin-top: -10%;
+    
+}
+  .quote {
+  padding-top: 1%;
+  text-align: center;
+
+}
+}
+

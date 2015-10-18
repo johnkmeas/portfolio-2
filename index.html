@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Parallax.js | Relative Example</title>
+
+  <!-- Behavioral Meta Data -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+</head>
+<body>
+
+  <div id="container" class="container">
+  
+    <ul id="scene" class="scene" data-scalar-x="13">
+      <li class="layer" data-depth="0.7"><img src="images/refugee-g-room.png"></li>
+      <li class="layer" data-depth="0.1"><img src="images/floor.png"></li>
+      <li class="layer" data-depth="0.5"><img src="images/refugee-gback.png"></li>
+      <li class="layer" data-depth="0.4"><img src="images/refugee-gmid.png"></li>
+      <li class="layer" data-depth="0.3"><img src="images/refugee.kids.png"></li>
+      <li class="layer" data-depth="0.2"><img src="images/refugee-gfront.png"></li>
+      
+      <li class="layer" data-depth="0.05"><img src="images/refugee-gbottle.png" class="blur"></li>
+      
+      <li class="layer" data-depth="0"><div class="framed"></div></li>
+    </ul>
+    <div class="layer"><h4>Refugee Parallax by</h4><h3>John Meas</h3>
+   
+    </div>
+    <br>
+    <input type="checkbox" id="relative" checked>
+    <label for="relative"></label>
+    <input type="checkbox" id="clip">
+    <label for="clip"></label>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/parallax.min.js"></script>
+  <script>
+
+  // Elements
+  var scene = document.getElementById('scene');
+  var clipCheckbox = document.getElementById('clip');
+  var relativeCheckbox = document.getElementById('relative');
+
+  // Pretty simple huh?
+  var parallax = new Parallax(scene, {
+    relativeInput: relativeCheckbox.checked,
+    clipRelativeInput: clipCheckbox.checked
+  });
+
+  relativeCheckbox.addEventListener('change', function(event) {
+    parallax.relativeInput = relativeCheckbox.checked;
+  });
+
+  clipCheckbox.addEventListener('change', function(event) {
+    parallax.clipRelativeInput = clipCheckbox.checked;
+  });
+
+  </script>
+
+</body>
+</html>
